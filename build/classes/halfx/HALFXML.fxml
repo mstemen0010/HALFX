@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="997.0" styleClass="pane" xmlns:fx="http://javafx.com/fxml" fx:controller="halfx.HALFXMLController">
+  <children>
+    <AnchorPane id="AnchorPane" minWidth="630.0" prefHeight="501.0" prefWidth="707.5" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="141.5" AnchorPane.rightAnchor="148.0" AnchorPane.topAnchor="72.0">
+      <children>
+        <ImageView id="emptyImageView2" fitHeight="499.9999694824219" fitWidth="629.0" layoutX="39.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+          <image>
+            <Image url="@images/HAL_Full_Eye_1.jpg" />
+          </image>
+        </ImageView>
+        <ImageView id="emptyImageView4" fx:id="Pwr_Image" fitHeight="71.0" fitWidth="94.66666666666666" layoutX="631.0" layoutY="430.0" onMouseClicked="#togglePwr" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/Orange_Pwr_Off.jpg" />
+          </image>
+        </ImageView>
+      </children>
+    </AnchorPane>
+    <ImageView id="emptyImageView1" fx:id="Com_Image" fitHeight="117.0" fitWidth="156.0" layoutX="25.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@images/Com_Off_1.jpg" />
+      </image>
+    </ImageView>
+    <ImageView id="emptyImageView1" fx:id="Lop_Image" fitHeight="117.0" fitWidth="156.0" layoutX="14.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@images/Lop_Off_1.jpg" />
+      </image>
+    </ImageView>
+    <ImageView id="emptyImageView1" fx:id="Mem_Image" fitHeight="117.0" fitWidth="156.0" layoutX="849.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@images/Mem_Off_1.jpg" />
+      </image>
+    </ImageView>
+    <ImageView id="emptyImageView1" fx:id="Lok_Image" fitHeight="117.0" fitWidth="156.0" layoutX="849.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@images/Lok_Off_1.jpg" />
+      </image>
+    </ImageView>
+    <ImageView id="emptyImageView3" fitHeight="46.0" fitWidth="275.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@images/hal_9000_label_1.jpg" />
+      </image>
+    </ImageView>
+    <AnchorPane id="anchorPane1" layoutX="14.0" layoutY="586.0" prefHeight="46.0" prefWidth="969.0">
+      <children>
+        <Button id="button1" fx:id="tlk_Send_Button" layoutX="904.0" layoutY="10.0" mnemonicParsing="false" onAction="#pushToTalk" styleClass="NavBarCell2" text="Send" textAlignment="LEFT" underline="true">
+          <effect>
+            <SepiaTone />
+          </effect>
+        </Button>
+        <TextField id="textField1" layoutX="167.0" layoutY="10.0" prefWidth="724.5" />
+        <Button id="button2" fx:id="pwr_Button" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#togglePwr" prefWidth="89.0" styleClass="NavBarCell2" text="(1)" />
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@halfx.css.css" />
+  </stylesheets>
+</AnchorPane>

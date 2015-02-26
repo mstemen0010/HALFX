@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="HALFX.jnlp">
+  <information>
+    <title>HALFX</title>
+    <vendor>Mathias</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib/HALFX-Preloader.jar" size="2994" download="progress" />
+    <jar href="HALFX.jar" size="1231230" download="eager" />
+    <jar href="lib/FreeTTS.jar" size="245227" download="eager" />
+    <jar href="lib/cmu_time_awb.jar" size="1723868" download="eager" />
+    <jar href="lib/cmu_us_kal.jar" size="4899452" download="eager" />
+    <jar href="lib/cmulex.jar" size="599514" download="eager" />
+    <jar href="lib/jsapi.jar" size="51811" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="HALFX" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="halfx.HALFX"  name="HALFX"  preloader-class="halfx.preloader.HALFX_Preloader"/>
+  <update check="always"/>
+</jnlp>
